@@ -14,10 +14,20 @@
     <script></script>
     <script>
         let rkey = document.getElementById('rkey');
+        let qq = 0;
+        let timer = setInterval(myTimer, 1000);
 
+        function myTimer() {
+            console.log("timer add 1");
+            qq += 1;
+            rkey.innerHTML = qq;
+            setTimeout(refresh, 500);
+        }
 
         function refresh() {
-            rkey.innerHTML = 0;
+            qq = 0;
+            console.log("refresh back to 0");
+            rkey.innerHTML = qq;
         }
     </script>
 </body>
