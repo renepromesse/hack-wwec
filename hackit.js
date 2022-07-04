@@ -6,7 +6,7 @@
             p = document.getElementsByClassName("value")[0];
             console.log("key ---> " + p.innerHTML);
             if(p.innerHTML >0){
-                confirm('Confrm someone is coming ...') ? clearLoop()   : window.location.reload();
+                confirm('Confrm someone is coming >...') ? clearLoop()   : window.location.reload();
             }
             function clearLoop(){
                 clearInterval(callTrack);
